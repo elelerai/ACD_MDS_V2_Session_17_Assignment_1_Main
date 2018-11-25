@@ -20,11 +20,11 @@ q = 0.75  # The rest three are wrong in each of the questions
 X = stats.binom(20, 0.25) # Declare X to be a binomial random variable
 
 #probability that a person undertaking that test has answered exactly 5 questions wrong.               
- 
+   # In other words it thesame as saying probability of getting 15 questions right
                
-probability=1- X.pmf(15)           #1- P(X = 15)
+probability=X.pmf(15)           #P(X = 15)
 
-
+print(probability)
 
 
 
